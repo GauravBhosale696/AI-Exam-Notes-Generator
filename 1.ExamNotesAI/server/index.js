@@ -7,7 +7,7 @@ import dns from "dns";
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const app = express()
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 6000
 app.get("/",(req,res)=>{
     res.json({message:" ExamNotes backend running "})
 })
@@ -15,4 +15,4 @@ app.get("/",(req,res)=>{
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
     connectDb()
-})
+}) 
