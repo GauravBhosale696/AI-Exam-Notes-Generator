@@ -14,7 +14,43 @@ function Auth() {
             px-8 py-6
             shadow-[0_20px_45px_rgba(0,0,0,0.6)]">
 
-            </motion.header>
+            <h1 className='text-2xl font-bold
+            bg-linear-to-r from white via-gray-300 to-white
+            bg-clip-text text-transparent'>ExamNotes AI</h1>
+            <p className="text-sm text-gray-300 mt-1">AI-powered exam-oriented notes & revision</p>
+            </motion.header> 
+
+            <main className="max-w-7xl mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-20
+            items-center">
+
+               {/* LEFT CONTENT */}
+               <motion.div 
+               initial = {{opacity: 0, x:-60}}
+               animate = {{opacity: 1, x: 0}}
+                transition={{duration:1.7}}
+               >
+                <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight
+                bg-gradient-to-br from-black/90 via-black/60 to-black/90
+                bg-clip-text text-transparent">
+                    Unlock Smart <br /> AI Notes 
+                </h1>
+                <motion.button className="mt-10 px-10 py-3 rounded-xl
+                flex items-center gap-3
+                bg-gradient-to-br from-black/90 via-black/80 to-black/90
+                border border-white/10
+                text-white font-semibold text-lg
+                shadow-[0_25px_60px_rgba(0,0,0,0.7)]">
+                    
+                </motion.button>
+
+               </motion.div>
+
+                {/* RIGHT CONTENT */}
+                <div>
+
+                </div>
+
+             </main>
             
         </div>
     )
